@@ -26,5 +26,7 @@
     - [14.19. System sets](./system_sets.md)
     - [14.20. State](./state.md)
     - [14.21. Change Detection](./change_detection.md)
+    - [14.22. ParamSets](./param_sets.md)
+    - [14.23. Non-Send](./non_send.md)
 - [5. 游戏引擎基础](./游戏引擎基础.md)
     - [5.1. 坐标系](./坐标系.md)
