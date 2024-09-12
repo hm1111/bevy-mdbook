@@ -1,10 +1,12 @@
 # Summary
 
 - [介绍](./介绍.md)
-- [章节概述](./chapter_overview.md)
-
 - [准备工作](./准备工作.md)
 - [概略](./概略.md)
+- [章节概述](./chapter_overview.md)
+- [Bevy内置类型列表](./Bevy内置类型列表.md)
+- [1. Bevy 教程](./bevy_tutorial.md)
+    - [1.1. 入门指南](./guided_tutorial.md)
 
 - [14. Bevy核心编程框架](./Bevy核心编程框架.md)
     - [14.1. ECS编程介绍](./ECS编程介绍.md)
