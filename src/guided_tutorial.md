@@ -23,8 +23,8 @@ Bevy新手者的入门指南。
     - [Commands](./commands.md)
 - [游戏引擎基础](./game_engine_fundamentals.md)
     - [坐标系](./coordinate_systems.md)
-    - [Transforms](./transforms.md)
-    - [Time and Timers](./time_and_timers.md)
+    - [转换](./transforms.md)
+    - [时间和计时器](./time_and_timers.md)
 - [一般图形功能](./general_graphics_features.md)
     - [Cameras](./cameras.md)
 - [Bevy资产管理](./bevy_assets_management.md)
@@ -95,6 +95,9 @@ Bevy新手者的入门指南。
 
 这些主题适用于特定的技术情况。如果您想了解更多关于 Bevy 内部工作原理、使用自定义功能扩展引擎或使用 Bevy 执行其他高级操作，您可以学习它们。
 
+- [Bevy设置技巧](./bevy_setup_tips.md)
+    - [自定义Bevy(crates和features)](./customizing_bevy.md)
+    - [使用最前沿的Bevy](./using_bleading_edge_bevy.md)
 - [Bevy编程框架](./bevy_programming_framework.md)
     - [Non-Send](./non_send.md)
 - [编程模式](./programming_patterns.md)
@@ -102,9 +105,6 @@ Bevy新手者的入门指南。
 - [输入处理](./input_handling.md)
     - [拖放文件](./drag_and_drop_files.md)
     - [用于高级文本输入的IME](./ime_for_advanced_text_input.md)
-- [Bevy设置技巧](./bevy_setup_tips.md)
-    - [自定义Bevy(crates和features)](./customizing_bevy.md)
-    - [使用最前沿的Bevy](./using_bleading_edge_bevy.md)
 - [Bevy GPU渲染框架](./bevy_render_framework.md)
     - [渲染架构概述](./rendering_architecture_overview.md)
     - [渲染集](./render_sets.md)
