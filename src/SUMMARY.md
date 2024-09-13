@@ -19,13 +19,12 @@
     - [3.2. 文本编辑器/IDE](./text_editor.md)
         - [3.2.1. VSCode](./vscode.md)
         - [3.2.2. 其他文本编辑器](./other_text_editors.md)
-
     - [3.3. 自定义Bevy(功能，模块)](./custom_bevy.md)
     - [3.4. 社区插件生态系统](./community_plugin_ecosystem.md)
     - [3.5. 开发工具和编辑器](./bevy_dev_tools_and_editors.md)
     - [3.6. 性能调优参数](./performance_tunables.md)
     - [3.7. 使用最前沿的Bevy](./using_bleeding_edge_bevy.md)
-
+    
 - [14. Bevy核心编程框架](./Bevy核心编程框架.md)
     - [14.1. ECS编程介绍](./ECS编程介绍.md)
     - [14.2. 数据](./数据.md)
