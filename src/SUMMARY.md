@@ -10,7 +10,7 @@
 - [2. Bevy Cookbook](./bevy_cookbook.md)
     - [2.1. 显示帧率](./show_frame_rate.md)
     - [2.2. 将光标坐标转换为游戏世界坐标](./convert_cursor_to_world_coordinates.)
-    - [2.3. 插值转换/外推法转换](./transiton_interpolation_and_extrapolation.md)
+    - [2.3. 插值转换/外推法转换](./transform_interpolation_and_extrapolation.md)
     - [2.4. 3D 平移+轨道摄像机](./3d_pan_and_orbit_camera.md)
     - [2.5. 自定义相机投影](./custom_camera_projection.md)
     - [2.6. 列出所有资源类型](./list_all_resource_types.md)
