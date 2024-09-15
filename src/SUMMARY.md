@@ -66,5 +66,6 @@
     - [14.21. Change Detection](./change_detection.md)
     - [14.22. ParamSets](./param_sets.md)
     - [14.23. Non-Send](./non_send.md)
-- [5. 游戏引擎基础](./游戏引擎基础.md)
-    - [5.1. 坐标系](./坐标系.md)
+
+- [16. 编程模式](./programming_patterns.md)
+    - [16.3. 手动事件清理](./manual_event_clearing.md)（待补充）
