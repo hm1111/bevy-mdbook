@@ -272,6 +272,6 @@
 
 ## Components(组件)
 
-[参考链接](https://bevy-cheatbook.github.io/builtins.html#components)
+[原文链接](https://bevy-cheatbook.github.io/builtins.html#components)
 
 [Components相关文档](https://docs.rs/bevy/latest/bevy/ecs/component/trait.Component.html#implementors)
