@@ -55,7 +55,7 @@
     - [14.10. Commands](./commands.md)
     - [14.11. Events](./events.md)
     - [14.12. Plugins](./plugins.md)
-    - [14.13. 本地资源](./local_resources.md)
+    - [14.13. Local Resources](./local_resources.md)
     - [14.14. Exclusive System](./exclusive_system.md)
     - [14.15. Direct ECS World Access](./direct_ecs_world_access.md)
     - [14.16. Shedules](./shedules.md)
@@ -64,11 +64,11 @@
     - [14.19. System sets](./system_sets.md)
     - [14.20. State](./state.md)
     - [14.21. Change Detection](./change_detection.md)
-    - [14.22. One-Shot Systems](./one-shot_systems.md)
-    - [14.23. Internal Parallelism](./internal_parallelism.md)
-    - [14.24. System Piping](./system_piping.md)
+    - [14.22. One-Shot Systems](./one-shot_systems.md)（------待补充------）
+    - [14.23. Internal Parallelism](./internal_parallelism.md)（------待补充------）
+    - [14.24. System Piping](./system_piping.md)（------待补充------）
     - [14.25. ParamSets](./param_sets.md)
     - [14.26. Non-Send](./non_send.md)
 
 - [16. 编程模式](./programming_patterns.md)
-    - [16.3. 手动事件清理](./manual_event_clearing.md)（待补充）
+    - [16.3. 手动事件清理](./manual_event_clearing.md)（------待补充------）
