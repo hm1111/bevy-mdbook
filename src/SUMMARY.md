@@ -64,8 +64,11 @@
     - [14.19. System sets](./system_sets.md)
     - [14.20. State](./state.md)
     - [14.21. Change Detection](./change_detection.md)
-    - [14.22. ParamSets](./param_sets.md)
-    - [14.23. Non-Send](./non_send.md)
+    - [14.22. One-Shot Systems](./one-shot_systems.md)
+    - [14.23. Internal Parallelism](./internal_parallelism.md)
+    - [14.24. System Piping](./system_piping.md)
+    - [14.25. ParamSets](./param_sets.md)
+    - [14.26. Non-Send](./non_send.md)
 
 - [16. 编程模式](./programming_patterns.md)
     - [16.3. 手动事件清理](./manual_event_clearing.md)（待补充）
