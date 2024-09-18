@@ -1,12 +1,12 @@
-# 14.16. Shedules
+# 14.16. schedules
 
 用来管理System，指定System什么时候以及如何执行。
 
-Bevy根据不同的目的设计了不同的`Shedules`，它们会在合适的时候执行。
+Bevy根据不同的目的设计了不同的`schedules`，它们会在合适的时候执行。
 
 ## Sheduling Systems
 
-如果你需要Bevy中的`System`执行，则需要通过`app builder`把它添加到`Shedules`中。
+如果你需要Bevy中的`System`执行，则需要通过`app builder`把它添加到`schedules`中。
 
 ### Pre-System Configuration
 
@@ -19,7 +19,7 @@ Bevy根据不同的目的设计了不同的`Shedules`，它们会在合适的时
 
 3. [system sets](./system_sets.md)：将`System`组织到一起，因此可以将通用配置应用于所有系统；
 
-当`Shedule`运行时，运行算法会遵循它的配置来确定`System`是否已准备好运行。当以下的所有情况都为`true`时，就代表System已经准备好运行：
+当`schedule`运行时，运行算法会遵循它的配置来确定`System`是否已准备好运行。当以下的所有情况都为`true`时，就代表System已经准备好运行：
 
 1. 没有其他正在运行的System在可变地访问相同的数据；
 
@@ -31,11 +31,11 @@ Bevy根据不同的目的设计了不同的`Shedules`，它们会在合适的时
 
 ### 动态添加/删除Systems
 
-`Shedule`并不支持在运行时动态添加/删除Systems，你必须在`App`构建时添加所有的Systems，并使用运行条件来控制它们的运行。
+`schedule`并不支持在运行时动态添加/删除Systems，你必须在`App`构建时添加所有的Systems，并使用运行条件来控制它们的运行。
 
 ## Bevy App Structure
 
-Bevy中主要有3个`Shedule`：
+Bevy中主要有3个`schedule`：
 
 1. `Main`：它是Bevy引擎的核心，它包含了游戏逻辑和状态更新的主要系统；
 
@@ -43,27 +43,27 @@ Bevy中主要有3个`Shedule`：
 
 3. `Render`：它负责执行渲染操作，包括绘制3D模型、应用光照和阴影效果等。
 
-除了这三个主要的Shedules之外，还存在其他的Shedules，这些Shedules通常在`Main`Shedules内部管理和运行。
+除了这三个主要的schedules之外，还存在其他的schedules，这些schedules通常在`Main`schedules内部管理和运行。
 
-这些Shedules负责特定的游戏功能或逻辑，例如物理模拟、AI行为或音频处理。它们作为`Main`Shedules的一部分，有助于组织和执行与游戏核心逻辑相关的各种任务。
+这些schedules负责特定的游戏功能或逻辑，例如物理模拟、AI行为或音频处理。它们作为`Main`schedules的一部分，有助于组织和执行与游戏核心逻辑相关的各种任务。
 
-在一个正常的Bevy应用程序中，`Main`+`Extract`+`Render`Shedule会在一个循环中重复运行。它们一起生成游戏的一帧。每次`Main`运行时，它都会运行一系列其他Shedule。在它的第一次运行中，它也会首先运行一系列的"startup" shedule。
+在一个正常的Bevy应用程序中，`Main`+`Extract`+`Render`schedule会在一个循环中重复运行。它们一起生成游戏的一帧。每次`Main`运行时，它都会运行一系列其他schedule。在它的第一次运行中，它也会首先运行一系列的"startup" schedule。
 
-大多数情况下，你只需要处理`Main`shedule的一系列子shedule，其他2个只和图像开发者有关。[有关Extract和Render的更多信息](https://bevy-cheatbook.github.io/gpu/intro.html)。
+大多数情况下，你只需要处理`Main`schedule的一系列子schedule，其他2个只和图像开发者有关。[有关Extract和Render的更多信息](https://bevy-cheatbook.github.io/gpu/intro.html)。
 
-## Main shedule
+## Main schedule
 
-它是运行程序逻辑的地方，它是一种元shedule，用来以指定顺序运行其他shedule。你不能把System直接添加到`Main` shedule中，而是添加到`Main` shedule管理的其他子shedule中。
+它是运行程序逻辑的地方，它是一种元schedule，用来以指定顺序运行其他schedule。你不能把System直接添加到`Main` schedule中，而是添加到`Main` schedule管理的其他子schedule中。
 
-### Bevy提供了一些子shedule，用来管理你的系统(system)：
+### Bevy提供了一些子schedule，用来管理你的系统(system)：
 
-1. `First`/`PreUpdate`/`StateTransition`/`RunFixedMainLoop`/`Update`/`PostUpdate`/`Last`：每次`Main` shedule运行时，它们都会运行一次。
+1. `First`/`PreUpdate`/`StateTransition`/`RunFixedMainLoop`/`Update`/`PostUpdate`/`Last`：每次`Main` schedule运行时，它们都会运行一次。
 
-2. `PreStartup`/`Startup`/`PostStartup`：在`Main` shedule第一次运行时运行，且只会运行一次；
+2. `PreStartup`/`Startup`/`PostStartup`：在`Main` schedule第一次运行时运行，且只会运行一次；
 
-3. `FixedMain`：它的固定时间步和`Main`shedule是一样的；为了追赶固定时间步长间隔，它会在需要的时候通过`RunFixedMainLoop`执行多次；
+3. `FixedMain`：它的固定时间步和`Main`schedule是一样的；为了追赶固定时间步长间隔，它会在需要的时候通过`RunFixedMainLoop`执行多次；
 
-4. `FixedFirst`/`FixedPreUpdate`/`FixedUpdate`/`FixedPostUpdate`/`FixedLast`：它们的时间步长和`Main`shedule的子shedule一样；
+4. `FixedFirst`/`FixedPreUpdate`/`FixedUpdate`/`FixedPostUpdate`/`FixedLast`：它们的时间步长和`Main`schedule的子schedule一样；
 
 5. `OnEnter()`/`OnExit()`/`OnTransition()`：在`State`改变时，它们会通过`StateTransition`执行；
 
@@ -71,13 +71,13 @@ Bevy中主要有3个`Shedule`：
 
 `Update`用来处理每一帧都需要执行的任务；`Startup`用来处理程序启动时需要执行的初始化任务；`FixedUpdate`用来处理固定时间步长间隔需要执行的任务；`State transition`用来处理`State`改变时需要执行的任务。
 
-## 配置shedules
+## 配置schedules
 
-### Single-Threaded Shedules
+### Single-Threaded schedules
 
-当你觉得多线程的shedule不能很好地工作时，或者因为其他原因，你可以为每一个shedule关闭它的多线程特性，而只使用单线程来运行。
+当你觉得多线程的schedule不能很好地工作时，或者因为其他原因，你可以为每一个schedule关闭它的多线程特性，而只使用单线程来运行。
 
-在单线程shedule中，系统只会在主线程运行，且同一时刻只有一个系统在运行。然而，“就绪算法”依然有效，这意味着系统的执行顺序依然是不明确的。你可以根据需要指定它们的执行顺序。
+在单线程schedule中，系统只会在主线程运行，且同一时刻只有一个系统在运行。然而，“就绪算法”依然有效，这意味着系统的执行顺序依然是不明确的。你可以根据需要指定它们的执行顺序。
 
 ```rust
 // Make FixedUpdate run single-threaded
@@ -140,17 +140,17 @@ app.add_systems(Update, (
 ));
 ```
 
-## Main shedule Configuration
+## Main schedule Configuration
 
-`Main` shedule的子shedule的执行顺序是由`MainSheduleOrder` resource决定的，如果这些预定义的子shedule不能满足你的要求，你可以定义你自己的shedule。`MainScheduleOrder` 资源(resource)允许你指定主调度器(`Main` shedule)运行子调度器的顺序。
+`Main` schedule的子schedule的执行顺序是由`MainscheduleOrder` resource决定的，如果这些预定义的子schedule不能满足你的要求，你可以定义你自己的schedule。`MainScheduleOrder` 资源(resource)允许你指定主调度器(`Main` schedule)运行子调度器的顺序。
 
-### 创建自定义shedule
+### 创建自定义schedule
 
-第1步：定义一个结构体/枚举，并派生`SheduleLabel` trait以及其他一些必要的trait；
+第1步：定义一个结构体/枚举，并派生`scheduleLabel` trait以及其他一些必要的trait；
 
-第2步：使用`app`初始化，并添加到`MainSheduleOrder` resource中；
+第2步：使用`app`初始化，并添加到`MainscheduleOrder` resource中；
 
-第3步：添加system到自定义的shedule；
+第3步：添加system到自定义的schedule；
 
 ```rust
 // Ensure the schedule has been created

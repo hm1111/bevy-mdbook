@@ -51,7 +51,7 @@ Bevy新手者的入门指南。
     - [运行条件](./run_condition.md)
     - [System Sets](./system_sets.md)
     - [Local Resources](./local_resources.md)
-    - [Shedules](./shedules.md)
+    - [schedules](./schedules.md)
     - [State](./state.md)
     - [Plugins](./plugins.md)
     - [Change Detection](./change_detection.md)

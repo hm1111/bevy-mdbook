@@ -58,4 +58,4 @@
 
 ## 常见陷阱
 
-system sets 的配置只存储在单个shedule中，当你在其他shedule中使用同一个system set，它将不会使用你在其他shedule中的配置。在`Update` shedule中配置的system sets只在`Update` shedule中生效。
+system sets 的配置只存储在单个schedule中，当你在其他schedule中使用同一个system set，它将不会使用你在其他schedule中的配置。在`Update` schedule中配置的system sets只在`Update` schedule中生效。

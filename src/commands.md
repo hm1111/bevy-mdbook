@@ -74,7 +74,7 @@ fn despawn_all_enemies(
 
 操作不会立马生效，因为在其他系统并行执行的时候修改数据是不安全的，它们会被放入队列中等安全之后再执行。
 
-在同一个shedule中，你可以添加`.before()/.after()`来指定系统的执行顺序。Bevy会在第二个系统之前执行这些操作，确保第二个系统能看见第一个系统所做的修改。
+在同一个schedule中，你可以添加`.before()/.after()`来指定系统的执行顺序。Bevy会在第二个系统之前执行这些操作，确保第二个系统能看见第一个系统所做的修改。
 
 ```rust
 app.add_systems(Update, spawn_new_enemies_if_needed);
@@ -85,7 +85,7 @@ app.add_systems(Update, enemy_ai.after(spawn_new_enemies_if_needed));
 
 如果没有指定系统的执行顺序，`commands`何时被应用是不确定的。这就导致有些系统可能在下一帧才能看到`commands`所做的修改。
 
-通常来说，`Commands`在每个shedule的结尾才被执行，之后执行的shedule就可以看到这些变化。例如：你可以在`PostUpdate`中看到`Update`生成的实体。
+通常来说，`Commands`在每个schedule的结尾才被执行，之后执行的schedule就可以看到这些变化。例如：你可以在`PostUpdate`中看到`Update`生成的实体。
 
 ## 自定义Commands
 

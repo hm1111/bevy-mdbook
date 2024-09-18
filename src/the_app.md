@@ -36,11 +36,11 @@ fn main() {
 
 组件不需要添加到app中。
 
-Shedules 不能在运行时被修改；所有系统都必须添加到 app 中。
+schedules 不能在运行时被修改；所有系统都必须添加到 app 中。
 
 你可以使用[运行条件](./run_condition.md)来控制单个系统。
 
-你可以使用[`MainSheduleOrder`](https://docs.rs/bevy/latest/bevy/app/struct.MainScheduleOrder.html) [resource](./resources.md)来动态启用/禁用整个 shedule。
+你可以使用[`MainscheduleOrder`](https://docs.rs/bevy/latest/bevy/app/struct.MainScheduleOrder.html) [resource](./resources.md)来动态启用/禁用整个 schedule。
 
 ## Bevy内置功能
 
@@ -54,7 +54,7 @@ Bevy 游戏引擎的自身功能被表示为一个[插件组](./plugins.md#plugi
 
 通常，你可以从系统中设置你的数据。从常规系统中使用`Commands`，或者使用独占系统来获取完整的World访问权限。
 
-将你的设置系统添加到`Startup` shedule中，以便在启动时初始化一些东西，或者使用[状态](./state.md)进入/退出系统来在菜单、游戏模式、关卡等之间转换时做一些事情。
+将你的设置系统添加到`Startup` schedule中，以便在启动时初始化一些东西，或者使用[状态](./state.md)进入/退出系统来在菜单、游戏模式、关卡等之间转换时做一些事情。
 
 但是，你也可以直接从应用构建器(app builder)初始化数据。对于资源来说，这很常见，因为它们需要一直存在。你也可以[直接访问World](./direct_ecs_world_access.md)。
 

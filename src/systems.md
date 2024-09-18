@@ -73,8 +73,8 @@ fn main() {
 
 **注意**：编写了一个新系统，却忘记把它添加到应用中是一个常见错误。如果你的代码并没有如你期望的那样运行，请检查你是否将它添加到了应用中。
 
-系统被包含在shedule中。Update shedule是你添加每一帧都需要运行的系统的地方；Startup shedule是你添加在程序启动时只需要运行一次的系统的地方。
+系统被包含在 schedule 中。Update schedule 是你添加每一帧都需要运行的系统的地方；Startup schedule 是你添加在程序启动时只需要运行一次的系统的地方。
 
 ## One-Shot Systems
 
-当你不想要 Bevy 执行你的系统，而只想给自己使用时，可以使用[一次性系统](./one-shot_systems.md)(one-shot systems)，不用把系统添加到`shedules`中。
+当你不想要 Bevy 执行你的系统，而只想给自己使用时，可以使用[一次性系统](./one-shot_systems.md)(one-shot systems)，不用把系统添加到 schedule 中。

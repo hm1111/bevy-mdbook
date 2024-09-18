@@ -50,17 +50,17 @@
 
 [参考链接](https://bevy-cheatbook.github.io/builtins.html#wgpu-backends)
 
-## Shedules(计划)
+## schedules(计划)
 
-3种内置shedules：
+3种内置schedules：
 
-1. `Main`：用来运行其他一系列的shedules（游戏逻辑），每一帧都运行一次；
+1. `Main`：用来运行其他一系列的schedules（游戏逻辑），每一帧都运行一次；
 
-2. `Extra`：将数据从`Main World`复制到`Render World`，运行在`Main` shedule之后；
+2. `Extra`：将数据从`Main World`复制到`Render World`，运行在`Main` schedule之后；
 
-3. `Render`：执行渲染、图像相关的任务，运行在`Extra` shedule之后；
+3. `Render`：执行渲染、图像相关的任务，运行在`Extra` schedule之后；
 
-第一帧运行的shedules：
+第一帧运行的schedules：
 
 1. `PreStartup`
 
@@ -68,7 +68,7 @@
 
 3. `PostStartup`
 
-每一帧都运行的shedules：
+每一帧都运行的schedules：
 
 1. `First`：每一帧开始的初始化任务；
 
@@ -76,7 +76,7 @@
 
 3. `StateTransition`：将要执行的状态转换；
 
-4. `RunFixedUpdateLoop`：运行`FixedUpdate` shedule；
+4. `RunFixedUpdateLoop`：运行`FixedUpdate` schedule；
 
 5. `Update`：每一帧需要运行的用户逻辑；
 
@@ -84,13 +84,13 @@
 
 7. `Last`：每一帧结束时的清理任务；
 
-`FixedUpdate` shedule用于运行需要固定时间间隔的逻辑。
+`FixedUpdate` schedule用于运行需要固定时间间隔的逻辑。
 
-当需要改变状态(change state)时，需要在`StateTransition` shedule中执行`OnEnter`、`OnTransition`和`OnExit` shedule。
+当需要改变状态(change state)时，需要在`StateTransition` schedule中执行`OnEnter`、`OnTransition`和`OnExit` schedule。
 
-`Render` shedule用`RenderSet`来组织。
+`Render` schedule用`RenderSet`来组织。
 
-[Render shedule 相关信息。](https://bevy-cheatbook.github.io/builtins.html#schedules)
+[Render schedule 相关信息。](https://bevy-cheatbook.github.io/builtins.html#schedules)
 
 ## Run Conditions(运行条件 TODO)
 

@@ -58,7 +58,7 @@
     - [14.13. Local Resources](./local_resources.md)
     - [14.14. Exclusive System](./exclusive_system.md)
     - [14.15. Direct ECS World Access](./direct_ecs_world_access.md)
-    - [14.16. Shedules](./shedules.md)
+    - [14.16. Schedules](./schedules.md)
     - [14.17. System执行顺序](./system_order_of_excution.md)
     - [14.18. Run Condition](./run_condition.md)
     - [14.19. System sets](./system_sets.md)
