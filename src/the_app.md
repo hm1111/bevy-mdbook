@@ -71,7 +71,7 @@ app.world_mut().spawn(SomeBundle::default());
 
 ## 退出应用
 
-为关闭应用，可以从任何系统发送一个`AppExit`事件：
+为关闭应用，可以从任何系统发送一个[`AppExit`](https://docs.rs/bevy/latest/bevy/app/enum.AppExit.html)事件：
 
 ```rust
 use bevy::app::AppExit;

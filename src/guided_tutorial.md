@@ -15,7 +15,7 @@ Bevy新手者的入门指南。
 - [Beyv编程框架](./bevy_programming_framework.md)
     - [ECS介绍](./ECS编程介绍.md)
     - [Entities and Components](./entities_and_components.md)
-    - [Bundles](./bunles.md)
+    - [Bundles](./bundles.md)
     - [Resources](./resources.md)
     - [Systems](./systems.md)
     - [App Builder](./app_builder.md)

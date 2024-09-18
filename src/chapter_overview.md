@@ -20,7 +20,7 @@
 
 - [Bevy核心编程框架](./Bevy核心编程框架.md)：ECS+App框架，一切的基础。
 
-- [编程模式](./programming_patterns.md)：建议、模式、...
+- [编程模式](./programming_patterns.md)：建议、模式、...(------待补充------)
 
 - [Bevy渲染框架](./render_framework.md)：Bevy GPU渲染。(------待补充------)
 

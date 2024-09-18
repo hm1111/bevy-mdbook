@@ -7,7 +7,7 @@
 - [Bevy内置类型列表](./Bevy内置类型列表.md)
 - [1. Bevy 教程](./bevy_tutorial.md)
     - [1.1. 入门指南](./guided_tutorial.md)
-- [2. Bevy Cookbook](./bevy_cookbook.md)
+- [2. Bevy Cookbook](./bevy_cookbook.md)（------整章待补充------）
     - [2.1. 显示帧率](./show_frame_rate.md)
     - [2.2. 将光标坐标转换为游戏世界坐标](./convert_cursor_to_world_coordinates.)
     - [2.3. 插值转换/外推法转换](./transform_interpolation_and_extrapolation.md)
@@ -22,9 +22,9 @@
     - [3.3. 自定义Bevy(功能，模块)](./custom_bevy.md)
     - [3.4. 社区插件生态系统](./community_plugin_ecosystem.md)
     - [3.5. 开发工具和编辑器](./bevy_dev_tools_and_editors.md)
-    - [3.6. 性能调优参数](./performance_tunables.md)(待补充)
-    - [3.7. 使用最前沿的Bevy](./using_bleeding_edge_bevy.md)(待补充)
-- [4. 常见的陷阱](./common_pitfalls.md)(整章待补充)
+    - [3.6. 性能调优参数](./performance_tunables.md)（------待补充------）
+    - [3.7. 使用最前沿的Bevy](./using_bleeding_edge_bevy.md)（------待补充------）
+- [4. 常见的陷阱](./common_pitfalls.md)（------整章待补充------）
     - [4.1. 来自Bevy或其依赖的陌生编译错误](./strange_compile_errors_from_bevy_or_dependencies.md)
     - [4.2. 低性能](./low_performance.md)
     - [4.3. 鲜为人知的Rust编译器错误](./obscure_rust_compiler_errors.md)
@@ -40,8 +40,8 @@
     - [5.5. 日志/控制台消息](./logging_and_console_messages.md)
     - [5.6. 父子层级](./parent_child_hierarchy.md)
     - [5.7. 固定时间步](./fixed_time_step.md)
-    - [5.8. 后台计算](./background_computation.md)
-    - [5.9. 小工具](./gizmos.md)
+    - [5.8. 后台计算](./background_computation.md)（------待补充------）
+    - [5.9. 小工具](./gizmos.md)（------待补充------）
 - [14. Bevy核心编程框架](./Bevy核心编程框架.md)
     - [14.1. ECS编程介绍](./ECS编程介绍.md)
     - [14.2. 数据](./数据.md)
@@ -50,7 +50,7 @@
     - [14.5. Systems](./systems.md)
     - [14.6. Resources](./resources.md)
     - [14.7. Entities, Componets](./entities_and_components.md)
-    - [14.8. Bundles](./bunles.md)
+    - [14.8. Bundles](./bundles.md)
     - [14.9. Queries](./queries.md)
     - [14.10. Commands](./commands.md)
     - [14.11. Events](./events.md)
@@ -69,6 +69,8 @@
     - [14.24. System Piping](./system_piping.md)（------待补充------）
     - [14.25. ParamSets](./param_sets.md)
     - [14.26. Non-Send](./non_send.md)
-
+- [15. Bevy渲染(GPU)框架](./bevy_render_gpu_framework.md)（------整章待补充------）
 - [16. 编程模式](./programming_patterns.md)
+    - [16.2. 组件存储](./component_storage.md)（------待补充------）
     - [16.3. 手动事件清理](./manual_event_clearing.md)（------待补充------）
+- [17. 不同平台上的Bevy](./bevy_on_different_platforms.md)
