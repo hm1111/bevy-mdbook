@@ -45,6 +45,8 @@
 - [8. 3D](./3d.md)（------整章待补充------）
     - [8.1. 3D相机设置](./3d_camera_setup.md)
     - [8.2. 3D模型和场景(GLTF)](./3d_models_and_scenes.md)
+- [9. 输入处理](./input_handling.md)
+    - [9.2. 鼠标](./mouse.md)
 - [10. 窗口管理](./windows_management.md)（------待补充------）
     - [10.1. 窗口属性](./window_properties.md)（------待补充------）
     - [10.2. 更改背景颜色](./change_the_background_color.md)
