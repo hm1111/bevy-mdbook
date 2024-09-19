@@ -66,7 +66,7 @@
     - [14.21. Change Detection](./change_detection.md)
     - [14.22. One-Shot Systems](./one-shot_systems.md)
     - [14.23. Internal Parallelism](./internal_parallelism.md)
-    - [14.24. System Piping](./system_piping.md)（------待补充------）
+    - [14.24. System Piping](./system_piping.md)
     - [14.25. ParamSets](./param_sets.md)
     - [14.26. Non-Send](./non_send.md)
 - [15. Bevy渲染(GPU)框架](./bevy_render_gpu_framework.md)（------整章待补充------）
