@@ -80,7 +80,7 @@ Bevy新手者的入门指南。
     - [HDR,Tonemapping](./hdr_and_tonemapping.md)
     - [Bloom](./bloom.md)
 - [Bevy资产管理](./bevy_assets_management.md)
-    - [通过资产事件对变化做出反应](./react_to_change_with_asset_events.md)
+    - [使用资产事件对更改做出反应](./react_to_change_with_asset_events.md)
     - [跟踪资产加载进度](./track_asset_loading_progress.md)
 - [编程模式](./programming_patterns.md)
     - [编写测试](./write_tests_for_systems.md)

@@ -42,10 +42,21 @@
     - [5.7. 固定时间步](./fixed_time_step.md)
     - [5.8. 后台计算](./background_computation.md)（------待补充------）
     - [5.9. 小工具](./gizmos.md)（------待补充------）
+- [8. 3D](./3d.md)（------整章待补充------）
+    - [8.1. 3D相机设置](./3d_camera_setup.md)
+    - [8.2. 3D模型和场景(GLTF)](./3d_models_and_scenes.md)
+- [11. 资产管理](./asset_management.md)
+    - [11.1. 句柄](./handles.md)
+    - [11.2. 从文件加载资产](./load_assets_from_files.md)
+    - [11.3. 访问资产数据](./access_asset_data.md)
+    - [11.4. 使用资产事件对更改做出反应](./react_to_change_with_asset_events.md)
+    - [11.5. 跟踪资产加载进度](./track_asset_loading_progress.md)
+    - [11.6. 热加载资产](./hot_loading_assets.md)
+    - [11.7. 处理资产](./processing_assets.md)
 - [12. 音频](./audio.md)
-    - [12.1. 播放音频](./playing_sounds.md)
-    - [12.2. 空间音频](./spatial_audio.md)
-    - [12.3. 自定义音频流](./custom_audio_streams.md)
+    - [12.1. 播放音频](./playing_sounds.md)（------待补充------）
+    - [12.2. 空间音频](./spatial_audio.md)（------待补充------）
+    - [12.3. 自定义音频流](./custom_audio_streams.md)（------待补充------）
 - [13. Bevy UI 框架](./bevy_ui_frameworkd.md)（------待补充------）
 - [14. Bevy核心编程框架](./Bevy核心编程框架.md)
     - [14.1. ECS编程介绍](./ECS编程介绍.md)
