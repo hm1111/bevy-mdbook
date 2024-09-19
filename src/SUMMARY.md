@@ -45,6 +45,11 @@
 - [8. 3D](./3d.md)（------整章待补充------）
     - [8.1. 3D相机设置](./3d_camera_setup.md)
     - [8.2. 3D模型和场景(GLTF)](./3d_models_and_scenes.md)
+- [10. 窗口管理](./windows_management.md)（------待补充------）
+    - [10.1. 窗口属性](./window_properties.md)（------待补充------）
+    - [10.2. 更改背景颜色](./change_the_background_color.md)
+    - [10.3. 抓取/捕获鼠标光标](./grab_or_capture_mouse_cursor.md)
+    - [10.4. 设置窗口图标](./set_window_icon.md)
 - [11. 资产管理](./asset_management.md)
     - [11.1. 句柄](./handles.md)
     - [11.2. 从文件加载资产](./load_assets_from_files.md)
@@ -61,7 +66,7 @@
 - [14. Bevy核心编程框架](./Bevy核心编程框架.md)
     - [14.1. ECS编程介绍](./ECS编程介绍.md)
     - [14.2. 数据](./数据.md)
-    - [14.3. 代码](./代码.md)
+    - [14.3. 代码](./代码.md)`
     - [14.4. The App](./the_app.md)
     - [14.5. Systems](./systems.md)
     - [14.6. Resources](./resources.md)
