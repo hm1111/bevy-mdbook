@@ -52,7 +52,7 @@
     - [11.4. 使用资产事件对更改做出反应](./react_to_change_with_asset_events.md)
     - [11.5. 跟踪资产加载进度](./track_asset_loading_progress.md)
     - [11.6. 热加载资产](./hot_loading_assets.md)
-    - [11.7. 处理资产](./processing_assets.md)
+    - [11.7. 处理资产](./processing_assets.md)（------待补充------）
 - [12. 音频](./audio.md)
     - [12.1. 播放音频](./playing_sounds.md)（------待补充------）
     - [12.2. 空间音频](./spatial_audio.md)（------待补充------）
