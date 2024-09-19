@@ -42,6 +42,11 @@
     - [5.7. 固定时间步](./fixed_time_step.md)
     - [5.8. 后台计算](./background_computation.md)（------待补充------）
     - [5.9. 小工具](./gizmos.md)（------待补充------）
+- [12. 音频](./audio.md)
+    - [12.1. 播放音频](./playing_sounds.md)
+    - [12.2. 空间音频](./spatial_audio.md)
+    - [12.3. 自定义音频流](./custom_audio_streams.md)
+- [13. Bevy UI 框架](./bevy_ui_frameworkd.md)（------待补充------）
 - [14. Bevy核心编程框架](./Bevy核心编程框架.md)
     - [14.1. ECS编程介绍](./ECS编程介绍.md)
     - [14.2. 数据](./数据.md)

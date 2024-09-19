@@ -65,7 +65,7 @@ Bevy新手者的入门指南。
 - [输入处理](./input_handling.md)
     - [将光标坐标转换为游戏世界坐标](./convert_cursor_to_world_coordinates.md)
 - [音频](./audio.md)
-    - [立体声音频](./spatial_audio.md)
+    - [空间音频](./spatial_audio.md)
 
 ## 中级
 
