@@ -46,7 +46,13 @@
     - [8.1. 3D相机设置](./3d_camera_setup.md)
     - [8.2. 3D模型和场景(GLTF)](./3d_models_and_scenes.md)
 - [9. 输入处理](./input_handling.md)
+    - [9.1. 键盘](./keyboard.md)
     - [9.2. 鼠标](./mouse.md)
+    - [9.3. 手柄](./gamepad.md)
+    - [9.4. 触摸屏](./touchscreen.md)
+    - [9.5. 手势](./gestures.md)
+    - [9.6. 拖放文件](./drag_and_drop_files.md)
+    - [9.7. IME](./ime.md)
 - [10. 窗口管理](./windows_management.md)（------待补充------）
     - [10.1. 窗口属性](./window_properties.md)（------待补充------）
     - [10.2. 更改背景颜色](./change_the_background_color.md)
